@@ -1,0 +1,243 @@
+{
+  "semilla": 42,
+  "corpus": {
+    "1": 731,
+    "0": 664
+  },
+  "limpio": {
+    "1": 613,
+    "0": 652
+  },
+  "entrenamiento": {
+    "0": 554,
+    "1": 521
+  },
+  "prueba": {
+    "0": 98,
+    "1": 92
+  },
+  "modelos": {
+    "mayoritario": {
+      "validacion": {
+        "accuracy": [
+          0.5153488372093024,
+          0.001860465116279064
+        ],
+        "precision": [
+          0.0,
+          0.0
+        ],
+        "recall": [
+          0.0,
+          0.0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "roc_auc": [
+          0.5,
+          0.0
+        ]
+      },
+      "parametros": {},
+      "prueba": {
+        "accuracy": 0.5157894736842106,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5
+      },
+      "matriz": [
+        [
+          98,
+          0
+        ],
+        [
+          92,
+          0
+        ]
+      ]
+    },
+    "reglas": {
+      "validacion": {
+        "accuracy": [
+          0.5153488372093024,
+          0.001860465116279064
+        ],
+        "precision": [
+          0.0,
+          0.0
+        ],
+        "recall": [
+          0.0,
+          0.0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "roc_auc": [
+          0.5,
+          0.0
+        ]
+      },
+      "parametros": {},
+      "prueba": {
+        "accuracy": 0.5157894736842106,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "roc_auc": 0.5
+      },
+      "matriz": [
+        [
+          98,
+          0
+        ],
+        [
+          92,
+          0
+        ]
+      ]
+    },
+    "naive_bayes": {
+      "validacion": {
+        "accuracy": [
+          0.9404651162790698,
+          0.005424141297530531
+        ],
+        "precision": [
+          0.9680042854895937,
+          0.019125681318920132
+        ],
+        "recall": [
+          0.9078205128205127,
+          0.019013300303436682
+        ],
+        "f1": [
+          0.9365960551616721,
+          0.006011634520768058
+        ],
+        "roc_auc": [
+          0.9896748296748296,
+          0.0028103109119521057
+        ]
+      },
+      "parametros": {
+        "model__alpha": 0.1,
+        "tfidf__min_df": 1,
+        "tfidf__ngram_range": [
+          1,
+          2
+        ]
+      },
+      "prueba": {
+        "accuracy": 0.9210526315789473,
+        "precision": 0.9425287356321839,
+        "recall": 0.8913043478260869,
+        "f1": 0.9162011173184358,
+        "roc_auc": 0.9886867790594499
+      },
+      "matriz": [
+        [
+          93,
+          5
+        ],
+        [
+          10,
+          82
+        ]
+      ]
+    },
+    "regresion_logistica": {
+      "validacion": {
+        "accuracy": [
+          0.9553488372093024,
+          0.006961223045160801
+        ],
+        "precision": [
+          0.9747966938111654,
+          0.021557928027413006
+        ],
+        "recall": [
+          0.932765567765568,
+          0.019340902151877972
+        ],
+        "f1": [
+          0.9529375523351161,
+          0.007331020281788538
+        ],
+        "roc_auc": [
+          0.9900395010395012,
+          0.0024883469261175006
+        ]
+      },
+      "parametros": {
+        "model__C": 10.0,
+        "tfidf__min_df": 1,
+        "tfidf__ngram_range": [
+          1,
+          1
+        ]
+      },
+      "prueba": {
+        "accuracy": 0.9631578947368421,
+        "precision": 0.967032967032967,
+        "recall": 0.9565217391304348,
+        "f1": 0.9617486338797814,
+        "roc_auc": 0.992790594498669
+      },
+      "matriz": [
+        [
+          95,
+          3
+        ],
+        [
+          4,
+          88
+        ]
+      ]
+    }
+  },
+  "seleccion": "regresion_logistica",
+  "ventaja_f1": 0.9617486338797814,
+  "cumple": true,
+  "errores": [
+    {
+      "registro_csv": 1303,
+      "real": 0,
+      "prediccion": 1
+    },
+    {
+      "registro_csv": 189,
+      "real": 1,
+      "prediccion": 0
+    },
+    {
+      "registro_csv": 1305,
+      "real": 0,
+      "prediccion": 1
+    },
+    {
+      "registro_csv": 230,
+      "real": 1,
+      "prediccion": 0
+    },
+    {
+      "registro_csv": 746,
+      "real": 0,
+      "prediccion": 1
+    },
+    {
+      "registro_csv": 154,
+      "real": 1,
+      "prediccion": 0
+    },
+    {
+      "registro_csv": 102,
+      "real": 1,
+      "prediccion": 0
+    }
+  ]
+}
